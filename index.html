@@ -1,253 +1,1310 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>QElight Innovations</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>
+        QElight Innovations
+    </title>
+
+    <meta
+        name="description"
+        content="QElight Innovations researches capability formation, learning systems, AI-assisted learning, capability assets, and Universal Capability Architecture."
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
     <style>
 
-        body {
-            font-family: "Segoe UI", sans-serif;
-            background: #f8fafc;
-            margin: 0;
+        :root{
+
+            --primary:#0f172a;
+            --secondary:#1e293b;
+            --accent:#2563eb;
+            --light:#f8fafc;
+            --text:#1e293b;
+
         }
 
-        .custom-navbar {
-            background: #0f172a;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-            padding-top: 12px;
-            padding-bottom: 12px;
+        html{
+            scroll-behavior:smooth;
         }
 
-        .navbar-brand img {
-            transition: 0.3s;
+        body{
+
+            font-family:
+                "Segoe UI",
+                system-ui,
+                sans-serif;
+
+            color:var(--text);
+
+            background:#ffffff;
+
+            line-height:1.8;
+
         }
 
-        .navbar-brand img:hover {
-            transform: scale(1.03);
+        .section{
+
+            padding-top:100px;
+            padding-bottom:100px;
+
         }
 
-        .nav-link {
-            color: white !important;
-            margin-left: 12px;
-            font-weight: 500;
+        .section-title{
+
+            font-size:2.3rem;
+
+            font-weight:700;
+
+            margin-bottom:25px;
+
+            text-align:center;
+
         }
 
-        .nav-link:hover {
-            color: #93c5fd !important;
+        .section-subtitle{
+
+            max-width:850px;
+
+            margin:auto;
+
+            text-align:center;
+
+            color:#475569;
+
         }
 
-        .hero-section {
+        .custom-navbar{
 
-            min-height: 90vh;
+            background:#000000;
 
-            display: flex;
-            align-items: center;
+            padding-top:12px;
+            padding-bottom:12px;
 
-            background:
-                linear-gradient(
-                    135deg,
-                    #0f172a 0%,
-                    #1e3a8a 100%
-                );
+            box-shadow:
+                0 2px 15px rgba(0,0,0,0.12);
+
         }
 
-        .hero-badge {
+        .navbar-brand img{
 
-            display: inline-block;
+            height:60px;
 
-            background: rgba(255, 255, 255, 0.12);
-
-            border: 1px solid rgba(255, 255, 255, 0.18);
-
-            border-radius: 999px;
-
-            padding: 10px 18px;
-
-            margin-bottom: 30px;
-
-            font-size: 0.95rem;
         }
 
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
+        .nav-link{
+
+            color:#ffffff !important;
+
+            font-weight:500;
+
+            margin-left:12px;
+
         }
 
-        .hero-subtitle {
-            margin-top: 25px;
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, 0.85);
+        .nav-link:hover{
+
+            color:#93c5fd !important;
+
         }
 
-        .hero-description {
+        .hero{
 
-            max-width: 850px;
+            min-height:88vh;
 
-            margin: 35px auto 0;
+            display:flex;
 
-            font-size: 1.15rem;
+            align-items:center;
 
-            line-height: 1.8;
+            background:#ffffff;
 
-            color: rgba(255, 255, 255, 0.92);
         }
 
-        .footer-section {
+        .hero-label{
 
-            background: #ffffff;
+            color:var(--accent);
 
-            text-align: center;
+            font-weight:600;
 
-            padding: 40px 20px;
+            text-transform:uppercase;
 
-            border-top: 1px solid #e5e7eb;
+            letter-spacing:2px;
+
+            margin-bottom:20px;
+
         }
 
-        .footer-section a {
-            color: #1e3a8a;
-            text-decoration: none;
+        .hero-title{
+
+            font-size:4rem;
+
+            font-weight:800;
+
+            line-height:1.2;
+
+            color:var(--primary);
+
         }
 
-        .footer-section a:hover {
-            text-decoration: underline;
+        .hero-description{
+
+            max-width:850px;
+
+            margin-top:30px;
+
+            font-size:1.2rem;
+
+            color:#475569;
+
         }
 
-        @media (max-width: 768px) {
+        .hero-buttons{
 
-            .hero-title {
-                font-size: 2.2rem;
+            margin-top:40px;
+
+        }
+
+        .btn-primary-custom{
+
+            background:var(--primary);
+
+            color:white;
+
+            border:none;
+
+            padding:14px 30px;
+
+            border-radius:8px;
+
+            text-decoration:none;
+
+        }
+
+        .btn-primary-custom:hover{
+
+            background:var(--secondary);
+
+        }
+
+        .btn-outline-custom{
+
+            border:1px solid var(--primary);
+
+            color:var(--primary);
+
+            padding:14px 30px;
+
+            border-radius:8px;
+
+            text-decoration:none;
+
+            margin-left:12px;
+
+        }
+
+        .btn-outline-custom:hover{
+
+            background:var(--primary);
+
+            color:white;
+
+        }
+
+        .info-card{
+
+            height:100%;
+
+            border:none;
+
+            border-radius:14px;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,0.06);
+
+            transition:0.3s;
+
+        }
+
+        .info-card:hover{
+
+            transform:translateY(-4px);
+
+        }
+
+        .info-card .card-body{
+
+            padding:30px;
+
+        }
+
+        .research-card{
+
+            text-align:center;
+
+            padding:30px;
+
+            border-radius:12px;
+
+            background:#f8fafc;
+
+            height:100%;
+
+        }
+
+        .founder-section{
+
+            background:#f8fafc;
+
+        }
+
+        .vision-section{
+
+            background:var(--primary);
+
+            color:white;
+
+        }
+
+        .footer{
+
+            background:#000000;
+
+            color:white;
+
+            padding:50px 0;
+
+        }
+
+        .footer a{
+
+            color:white;
+
+            text-decoration:none;
+
+        }
+
+        .footer a:hover{
+
+            color:#93c5fd;
+
+        }
+
+        @media(max-width:768px){
+
+            .hero-title{
+
+                font-size:2.5rem;
+
             }
 
-            .hero-description {
-                font-size: 1rem;
+            .hero-description{
+
+                font-size:1rem;
+
             }
+
         }
 
     </style>
-</head>
 
+</head>
 <body>
 
-    <!-- Navigation -->
+<!-- =========================
+     NAVIGATION
+========================== -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
 
-        <div class="container">
+    <div class="container">
 
-            <a class="navbar-brand" href="#">
-                <img src="rec-logo.jpeg" height="55" alt="QElight Innovations Logo">
-            </a>
+        <a class="navbar-brand" href="#">
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <img
+                src="rec-logo.jpeg"
+                alt="QElight Innovations">
 
-                <span class="navbar-toggler-icon"></span>
+        </a>
 
-            </button>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <span class="navbar-toggler-icon"></span>
 
-                <ul class="navbar-nav ms-auto">
+        </button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mission</a>
-                    </li>
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Research</a>
-                    </li>
+            <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experiments</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mission">
+                        Mission
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Founder</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#research">
+                        Research
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Connect</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiments">
+                        Experiments
+                    </a>
+                </li>
 
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#assets">
+                        Assets
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#founder">
+                        Founder
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Connect
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO SECTION
+========================== -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-10">
+
+                <div class="hero-label">
+
+                    QELIGHT INNOVATIONS
+
+                </div>
+
+                <h1 class="hero-title">
+
+                    Researching, Designing,
+                    and Improving
+                    Capability Formation Systems
+
+                </h1>
+
+                <p class="hero-description">
+
+                    QElight Innovations explores how
+                    individuals and organizations develop
+                    real-world capabilities through
+                    structured learning systems,
+                    capability assets,
+                    observation-driven experimentation,
+                    and AI-assisted approaches.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#research"
+                        class="btn-primary-custom">
+
+                        Explore Research
+
+                    </a>
+
+                    <a
+                        href="#experiments"
+                        class="btn-outline-custom">
+
+                        View Experiments
+
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
+</section>
+    
+<!-- =========================
+     MISSION
+========================== -->
 
-    <section class="hero-section">
+<section
+    id="mission"
+    class="section bg-light">
 
-        <div class="container text-center text-white">
+    <div class="container">
 
-            <div class="hero-badge">
-                Capability Formation Research • Learning Systems • AI
+        <h2 class="section-title">
+            Our Mission
+        </h2>
+
+        <p class="section-subtitle">
+
+            To understand, improve, and systematize
+            capability formation through research,
+            structured assets, learning systems,
+            and AI-assisted approaches.
+
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-10 mx-auto">
+
+                <p class="text-center">
+
+                    QElight explores how capabilities
+                    are developed, transferred,
+                    evaluated, and strengthened.
+
+                    We believe capability development
+                    can become more observable,
+                    measurable, transferable,
+                    and accessible through
+                    thoughtful design and
+                    evidence-based approaches.
+
+                </p>
+
             </div>
 
-            <h1 class="hero-title">
-                Engineering Capability Formation
-                <br>
-                for the AI Era
-            </h1>
+        </div>
 
-            <p class="hero-subtitle">
-                Research • Systems • Experiments • Capability Assets
-            </p>
+    </div>
 
-            <p class="hero-description">
+</section>
 
-                QElight Innovations explores how individuals and organizations
-                develop real-world capabilities through structured learning
-                systems, capability assets, observation-driven experimentation,
-                and AI-assisted approaches.
 
-            </p>
+<!-- =========================
+     WHAT WE DO
+========================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            What We Do
+        </h2>
+
+        <p class="section-subtitle">
+
+            Research, design, experimentation,
+            and capability asset creation.
+
+        </p>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card info-card">
+
+                    <div class="card-body">
+
+                        <h4>
+                            Research
+                        </h4>
+
+                        <p>
+
+                            Study how real-world
+                            capabilities are formed,
+                            transferred,
+                            and demonstrated.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card info-card">
+
+                    <div class="card-body">
+
+                        <h4>
+                            Systems
+                        </h4>
+
+                        <p>
+
+                            Design architectures,
+                            frameworks,
+                            and learning systems
+                            that support capability development.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card info-card">
+
+                    <div class="card-body">
+
+                        <h4>
+                            Experiments
+                        </h4>
+
+                        <p>
+
+                            Validate ideas through
+                            real-world capability
+                            formation experiments
+                            and observations.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card info-card">
+
+                    <div class="card-body">
+
+                        <h4>
+                            Assets
+                        </h4>
+
+                        <p>
+
+                            Create roadmaps,
+                            CWNs,
+                            projects,
+                            evaluators,
+                            and capability resources.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Footer -->
+</section>
+<!-- =========================
+     RESEARCH AREAS
+========================== -->
 
-    <footer id="contact" class="footer-section">
+<section
+    id="research"
+    class="section bg-light">
 
-        <div class="container">
+    <div class="container">
 
-            <p>
-                © 2026 QElight Innovations. All Rights Reserved.
-            </p>
+        <h2 class="section-title">
+            Research Areas
+        </h2>
 
-            <p>
-                <a href="mailto:qelightinnovations@gmail.com">
-                    qelightinnovations@gmail.com
-                </a>
-            </p>
+        <p class="section-subtitle">
 
-            <p>
-                <a href="https://qelight.in">
-                    qelight.in
-                </a>
-            </p>
+            Current areas of exploration and investigation.
+
+        </p>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Capability Formation
+                    </h5>
+
+                    <p>
+                        Understanding how capabilities
+                        emerge, strengthen,
+                        and transfer into practice.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Learning Transfer
+                    </h5>
+
+                    <p>
+                        Investigating how learning
+                        becomes real-world performance.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Capability Evaluation
+                    </h5>
+
+                    <p>
+                        Exploring methods to observe,
+                        evaluate,
+                        and validate capability growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Knowledge Systems
+                    </h5>
+
+                    <p>
+                        Designing structured systems
+                        that improve learning,
+                        retention,
+                        and application.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        AI-Assisted Learning
+                    </h5>
+
+                    <p>
+                        Studying how AI can support
+                        capability development,
+                        feedback,
+                        and learning workflows.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Universal Capability Architecture
+                    </h5>
+
+                    <p>
+                        Exploring common patterns
+                        underlying capability development
+                        across domains.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </footer>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+
+
+<!-- =========================
+     CAPABILITY EXPERIMENTS
+========================== -->
+
+<section
+    id="experiments"
+    class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Capability Experiments
+        </h2>
+
+        <p class="section-subtitle">
+
+            Real-world experiments that help us
+            understand capability formation
+            and improve our systems.
+
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-10 mx-auto">
+
+                <div class="card info-card">
+
+                    <div class="card-body">
+
+                        <div class="mb-3">
+
+                            <span class="badge bg-success">
+                                Active
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Experiment #001
+                        </h3>
+
+                        <h5 class="text-muted">
+                            Python Capability Formation
+                            for DevOps Professionals
+                        </h5>
+
+                        <p class="mt-4">
+
+                            Investigating how
+                            structured capability assets,
+                            projects,
+                            AI assistance,
+                            evaluators,
+                            and observation-driven feedback
+                            can accelerate capability development
+                            in real work environments.
+
+                        </p>
+
+                        <p>
+
+                            Focus Areas:
+
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Capability Gap Mapping
+                            </li>
+
+                            <li>
+                                AI-Assisted Learning
+                            </li>
+
+                            <li>
+                                Project-Based Development
+                            </li>
+
+                            <li>
+                                Capability Evaluation
+                            </li>
+
+                            <li>
+                                Evidence Collection
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CAPABILITY ASSETS
+========================== -->
+
+<section
+    id="assets"
+    class="section bg-light">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Capability Assets
+        </h2>
+
+        <p class="section-subtitle">
+
+            Structured resources that support
+            capability development and experimentation.
+
+        </p>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Roadmaps
+                    </h5>
+
+                    <p>
+                        Capability-oriented development paths.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Cognitive Wiring Notes
+                    </h5>
+
+                    <p>
+                        Structured thinking assets
+                        for capability formation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Projects
+                    </h5>
+
+                    <p>
+                        Real-world applications
+                        for capability validation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Evaluators
+                    </h5>
+
+                    <p>
+                        Systems for observing
+                        and assessing capability growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Workshops
+                    </h5>
+
+                    <p>
+                        Interactive learning
+                        and experimentation environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="research-card">
+
+                    <h5>
+                        Research Notes
+                    </h5>
+
+                    <p>
+                        Insights,
+                        observations,
+                        and evolving findings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     FOUNDER
+========================== -->
+
+<section
+    id="founder"
+    class="section founder-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Founder
+        </h2>
+
+        <p class="section-subtitle">
+
+            Building systems for capability development,
+            learning, and future-ready growth.
+
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-8 mx-auto">
+
+                <div class="card info-card">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            Vishnupriya Karanam
+                        </h3>
+
+                        <p class="text-muted">
+
+                            Founder, QElight Innovations
+
+                        </p>
+
+                        <p>
+
+                            Exploring capability architectures,
+                            learning systems,
+                            knowledge systems,
+                            and AI-assisted approaches
+                            to capability development.
+
+                        </p>
+
+                        <p>
+
+                            Current work includes capability
+                            formation research,
+                            Universal Capability Architecture,
+                            Cognitive Wiring Notes (CWNs),
+                            evaluator systems,
+                            and AI-supported learning workflows.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     VISION
+========================== -->
+
+<section
+    class="section vision-section">
+
+    <div class="container">
+
+        <h2 class="section-title text-white">
+
+            Toward a Universal Capability Architecture
+
+        </h2>
+
+        <p
+            class="section-subtitle text-white"
+            style="opacity:0.9;">
+
+            A future where individuals and institutions
+            can systematically develop capabilities
+            through evidence-based learning systems,
+            AI assistance,
+            structured assets,
+            and measurable outcomes.
+
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-10 mx-auto text-center">
+
+                <p>
+
+                    QElight aims to contribute toward
+                    a deeper understanding of capability formation
+                    and the development of practical systems
+                    that support lifelong learning,
+                    workforce development,
+                    and human potential.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONNECT
+========================== -->
+
+<section
+    id="contact"
+    class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Connect
+
+        </h2>
+
+        <p class="section-subtitle">
+
+            Follow our research,
+            experiments,
+            and capability development initiatives.
+
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-8 mx-auto">
+
+                <div class="card info-card">
+
+                    <div class="card-body text-center">
+
+                        <p>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            &nbsp;
+
+                            <a href="mailto:qelightinnovations@gmail.com">
+
+                                qelightinnovations@gmail.com
+
+                            </a>
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-globe"></i>
+
+                            &nbsp;
+
+                            <a href="https://qelight.in">
+
+                                qelight.in
+
+                            </a>
+
+                        </p>
+
+                        <div class="mt-4">
+
+                            <a
+                                href="https://www.linkedin.com/company/qelightinnovations/"
+                                target="_blank"
+                                class="btn btn-outline-dark m-1">
+
+                                LinkedIn
+
+                            </a>
+
+                            <a
+                                href="https://github.com/qelightinnovations"
+                                target="_blank"
+                                class="btn btn-outline-dark m-1">
+
+                                GitHub
+
+                            </a>
+
+                            <a
+                                href="https://www.facebook.com/qelightinnovations"
+                                target="_blank"
+                                class="btn btn-outline-dark m-1">
+
+                                Facebook
+
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/qelightinnovations/"
+                                target="_blank"
+                                class="btn btn-outline-dark m-1">
+
+                                Instagram
+
+                            </a>
+
+                            <a
+                                href="https://www.youtube.com/@qelightinnovations"
+                                target="_blank"
+                                class="btn btn-outline-dark m-1">
+
+                                YouTube
+
+                            </a>
+
+                            <a
+                                href="https://wa.me/919945034665"
+                                target="_blank"
+                                class="btn btn-outline-dark m-1">
+
+                                WhatsApp
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <h5>
+
+            QElight Innovations
+
+        </h5>
+
+        <p>
+
+            Research • Systems • Experiments • Capability Assets
+
+        </p>
+
+        <p>
+
+            © 2026 QElight Innovations.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
+
