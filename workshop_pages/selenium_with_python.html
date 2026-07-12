@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selenium with Python - QElight</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .navbar-dark-blue {
+        background-color: #003366;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-blue fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">QElight - Quality Education</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Syllabus Content -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Selenium with Python</h2>
+      <p class="text-center">Detailed syllabus for the Selenium with Python course.</p>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Introduction to Selenium and Web Automation</strong>
+          <ul>
+            <li>Overview of Selenium and its components (WebDriver, IDE, Grid)</li>
+            <li>Importance of automation testing</li>
+            <li>Setting up Selenium with Python</li>
+            <li>Writing your first Selenium script</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Environment Setup</strong>
+          <ul>
+            <li>Installing Python and Selenium</li>
+            <li>Configuring WebDriver for different browsers</li>
+            <li>Setting up virtual environments</li>
+            <li>Introduction to IDEs for Selenium</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Locating Elements on Web Pages</strong>
+          <ul>
+            <li>Overview of HTML and the Document Object Model (DOM)</li>
+            <li>Using IDs, names, classes, and other locators</li>
+            <li>Advanced locators: CSS Selectors and XPath</li>
+            <li>Handling dynamic elements</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Interacting with Web Elements</strong>
+          <ul>
+            <li>Sending text inputs to form fields</li>
+            <li>Clicking buttons, links, and other elements</li>
+            <li>Handling checkboxes, radio buttons, and dropdowns</li>
+            <li>Uploading files and handling file dialogs</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Advanced Web Interactions</strong>
+          <ul>
+            <li>Executing JavaScript in Selenium</li>
+            <li>Handling cookies and browser storage</li>
+            <li>Drag and drop actions with the Actions class</li>
+            <li>Simulating mouse and keyboard actions</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Waiting Mechanisms</strong>
+          <ul>
+            <li>Importance of waits for dynamic elements</li>
+            <li>Implicit waits vs. explicit waits</li>
+            <li>WebDriverWait and Expected Conditions</li>
+            <li>Handling timeouts and custom waits</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Handling Multiple Windows, Tabs, and Frames</strong>
+          <ul>
+            <li>Switching between windows and tabs</li>
+            <li>Handling pop-ups and alerts</li>
+            <li>Working with iframes and nested frames</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Working with Dynamic Elements</strong>
+          <ul>
+            <li>Locating dynamic elements</li>
+            <li>Handling AJAX elements and partial page loads</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Data-Driven Testing with Selenium</strong>
+          <ul>
+            <li>Setting up data-driven tests in Python</li>
+            <li>Using CSV, Excel, and JSON files as data sources</li>
+            <li>Parameterizing tests with multiple sets of data</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Frameworks and Test Structure</strong>
+          <ul>
+            <li>Introduction to test frameworks: unittest, pytest</li>
+            <li>Structuring test scripts and organizing code</li>
+            <li>Using Page Object Model (POM)</li>
+            <li>Best practices in test design</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Error Handling and Debugging</strong>
+          <ul>
+            <li>Debugging techniques in Selenium</li>
+            <li>Handling common exceptions in Selenium</li>
+            <li>Strategies for handling broken connections</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Taking Screenshots and Reporting</strong>
+          <ul>
+            <li>Capturing screenshots for validation and debugging</li>
+            <li>Integrating Selenium with reporting libraries</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Advanced Selenium Concepts</strong>
+          <ul>
+            <li>Using Selenium Grid for parallel test execution</li>
+            <li>Setting up and configuring Selenium Grid nodes</li>
+            <li>Running tests on multiple browsers and OS</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Continuous Integration (CI) with Selenium</strong>
+          <ul>
+            <li>Integrating Selenium tests with CI tools like Jenkins</li>
+            <li>Automating test execution on code commits</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Project: Building an Automated Testing Framework</strong>
+          <ul>
+            <li>Setting up a test project from scratch</li>
+            <li>Creating test suites and organizing test cases</li>
+            <li>Implementing Page Object Model (POM) and reusable utilities</li>
+            <li>Running the project with data-driven and parallel testing</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Best Practices in Selenium Automation</strong>
+          <ul>
+            <li>Writing clean, maintainable, and scalable code</li>
+            <li>Common pitfalls and optimizations</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 QElight Workshops. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:vishnupriya.connect@gmail.com" class="text-white">vishnupriya.connect@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919606485837" class="text-white">+91 9606485837</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
