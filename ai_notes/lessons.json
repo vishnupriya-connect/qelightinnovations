@@ -1,0 +1,72 @@
+{
+  "QAI.00.01": {
+    "title": "Task and system basics",
+    "note": "notes/QAI.00.01_Task_and_System_Basics_Notes.md",
+    "resources": []
+  },
+  "QAI.00.02": {
+    "title": "Task types",
+    "note": "notes/QAI.00.02_Task_Types_Notes.md",
+    "resources": []
+  },
+  "QAI.00.03": {
+    "title": "AI-domain map",
+    "note": "notes/QAI.00.03_AI_Domain_Map_Notes.md",
+    "resources": []
+  },
+  "QAI.00.04": {
+    "title": "System and model basics",
+    "note": "notes/QAI.00.04_System_and_Model_Basics_Notes.md",
+    "resources": []
+  },
+  "QAI.00.05": {
+    "title": "Learning, implementation, and evidence habits",
+    "note": "notes/QAI.00.05_Learning_Implementation_and_Evidence_Habits_Notes.md",
+    "resources": []
+  },
+  "QAI.00.06": {
+    "title": "Working environment",
+    "note": "notes/QAI.00.06_Working_Environment_Notes.md",
+    "resources": []
+  },
+  "QAI.00.07": {
+    "title": "Responsible AI and verification",
+    "note": "notes/QAI.00.07_Responsible_AI_and_Verification_Notes.md",
+    "resources": []
+  },
+  "QAI.00.08": {
+    "title": "AI limitations and output judgement",
+    "note": "notes/QAI.00.08_AI_Limitations_and_Output_Judgement_Notes.md",
+    "resources": []
+  },
+  "QAI.01.01": {
+    "title": "Computer and software basics",
+    "note": "notes/QAI.01.01_Computer_and_Software_Basics_Notes.md",
+    "resources": []
+  },
+  "QAI.01.02": {
+    "title": "File-system basics",
+    "note": "notes/QAI.01.02_File_System_Basics_Notes.md",
+    "resources": []
+  },
+  "QAI.01.03": {
+    "title": "File-system actions",
+    "note": "notes/QAI.01.03_File_System_Actions_Notes.md",
+    "resources": []
+  },
+  "QAI.01.04": {
+    "title": "Terminal and shell basics",
+    "note": "notes/QAI.01.04_Terminal_and_Shell_Basics_Notes.md",
+    "resources": []
+  },
+  "QAI.01.05": {
+    "title": "Program and code basics",
+    "note": "notes/QAI.01.05_Program_and_Code_Basics_Notes.md",
+    "resources": []
+  },
+  "QAI.01.06": {
+    "title": "Python execution basics",
+    "note": "notes/QAI.01.06_Python_Execution_Basics_Notes.md",
+    "resources": []
+  }
+}
