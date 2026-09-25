@@ -1,0 +1,5 @@
+{
+  "mode": "demo",
+  "model_name": "example-text-model",
+  "request_timeout_seconds": 15
+}
