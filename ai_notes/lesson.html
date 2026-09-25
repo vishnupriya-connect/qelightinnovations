@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./theme.js"></script>
 <title>Lesson — QElight AI Field Expertise</title>
 <style>
   :root { color-scheme: light; --ink:#16231e; --muted:#596b60; --green:#166848; --line:#d9e3dd; }
@@ -31,9 +32,10 @@
   article img { max-width:100%; height:auto; }
   @media(max-width:600px) { main { padding:0 10px; } .panel { padding:20px 16px; } }
 </style>
+<link rel="stylesheet" href="./theme.css">
 </head>
-<body>
-<header><a href="./">← QElight AI Field Expertise · Master TOC</a></header>
+<body class="lesson-page">
+<header><a href="./">← QElight AI Field Expertise · Master TOC</a><button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button></header>
 <main>
   <nav class="nav" id="previous-nav" aria-label="Previous lesson"></nav>
   <div class="panel"><p id="status" class="status" role="status">Loading lesson…</p><article id="lesson"></article><section id="resources" aria-label="Practice resources"></section></div>

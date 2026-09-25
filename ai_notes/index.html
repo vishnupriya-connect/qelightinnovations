@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./theme.js"></script>
 <title>QElight AI Field Expertise — Master TOC</title>
 <style>
   :root {
@@ -93,12 +94,16 @@
     .content { padding-left: 28px; }
   }
 </style>
+<link rel="stylesheet" href="./theme.css">
 </head>
-<body>
+<body class="toc-page">
 <main class="shell">
   <header>
-    <h1>QElight AI Field Expertise</h1>
-    <p class="subtitle">Detailed atomic master table of contents — concepts, implementation, systems, and capability evidence.</p>
+    <div>
+      <h1>QElight AI Field Expertise</h1>
+      <p class="subtitle">Detailed atomic master table of contents — concepts, implementation, systems, and capability evidence.</p>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
   </header>
   <section class="toolbar" aria-label="TOC controls">
     <div class="search"><input id="search" type="search" placeholder="Search a topic, tool, model, or concept…" autocomplete="off"></div>
