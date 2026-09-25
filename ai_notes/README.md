@@ -6,21 +6,21 @@ The master TOC is `index.html`. Each lesson is a separate Markdown file in
 ## Publish a new lesson
 
 1. Add a file named `QAI.xx.yy_Descriptive_Name_Notes.md` directly inside
-   `ai/notes/`. Its ID must match a section heading in `ai/index.html`.
-2. Put any accompanying files inside `ai/notes/QAI.xx.yy_resources/` (with
+   `ai_notes/notes/`. Its ID must match a section heading in `ai_notes/index.html`.
+2. Put any accompanying files inside `ai_notes/notes/QAI.xx.yy_resources/` (with
    exactly the same ID). Subfolders are allowed. Link to particular resources
    in the Markdown using their relative paths, or let the reader list them in
    its **Practice resources** section.
 3. Commit the Markdown file and resource folder. GitHub Pages rebuilds
-   `ai/files.json` from the files in `ai/notes/`; the TOC and lesson reader use
+   `ai_notes/files.json` from the files in `ai_notes/notes/`; the TOC and lesson reader use
    that list automatically. No JSON or script edit is needed for subsequent
    lessons. The first publication must include `catalog.js` and `files.json`.
 
 For example:
 
 ```text
-ai/notes/QAI.02.01.01_Data_and_Data_System_Basics_Notes.md
-ai/notes/QAI.02.01.01_resources/example.ipynb
+ai_notes/notes/QAI.02.01.01_Data_and_Data_System_Basics_Notes.md
+ai_notes/notes/QAI.02.01.01_resources/example.ipynb
 ```
 
 The TOC displays **Read lesson** only for note IDs it already contains. All

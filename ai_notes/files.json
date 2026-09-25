@@ -4,8 +4,8 @@ layout: null
 [
 {% assign separator = '' %}
 {% for file in site.static_files %}
-  {% if file.path contains '/ai/notes/' %}
-    {{ separator }}{{ file.path | remove_first: '/ai/' | jsonify }}
+  {% if file.path contains '/ai_notes/notes/' %}
+    {{ separator }}{{ file.path | remove_first: '/ai_notes/' | jsonify }}
     {% assign separator = ',' %}
   {% endif %}
 {% endfor %}

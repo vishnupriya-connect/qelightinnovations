@@ -1,4 +1,4 @@
-// files.json is generated at publish time from the files in ai/notes/.
+// files.json is generated at publish time from the files in ai_notes/notes/.
 export async function loadCatalog() {
   const response = await fetch("files.json");
   if (!response.ok) throw new Error("Lesson list unavailable.");
