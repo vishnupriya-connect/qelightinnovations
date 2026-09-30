@@ -1,0 +1,20 @@
+single: Series L10 (3,)
+one-row table: DataFrame (1, 3)
+list order: ['L20', 'L40', 'L20']
+inclusive label slice: ['L10', 'L70', 'L20']
+reverse label slice: ['L20', 'L70', 'L10']
+two-axis block:
+,sql,learner
+L70,89,Chitra
+L10,77,Bala
+scalar cell: 91
+one column: Series (5,)
+one-column table: DataFrame (5, 1)
+missing scalar: KeyError
+missing list member: KeyError
+missing column: KeyError
+duplicate label result: DataFrame (2, 1)
+variation:
+,learner,sql
+L60,Eshan,90
+L40,Anu,80
