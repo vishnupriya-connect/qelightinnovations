@@ -1,0 +1,17 @@
+comparison [False, True, True, False, True, True]
+and ['L30', 'L60']
+or ['L20', 'L30', 'L50']
+not ['L10', 'L20', 'L30', 'L50', 'L60']
+isin ['L10', 'L20', 'L30', 'L50', 'L60']
+isna ['L20', 'L50']
+notna ['L10', 'L30', 'L40', 'L60']
+aligned ['Deepa', 'Farah']
+nullable ['Anu', 'Deepa', 'Farah']
+failure_1 ValueError
+failure_2 ValueError
+failure_3 IndexError
+failure_4 IndexingError
+variation
+,learner,score,mentor
+L10,Anu,72,Mira
+L60,Farah,80,Ravi

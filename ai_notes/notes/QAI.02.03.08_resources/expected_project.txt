@@ -1,0 +1,5 @@
+,learner,track,score,mentor
+L20,Bala,SQL,85,
+L30,Chitra,Python,91,Ravi
+L50,Eshan,SQL,88,
+L60,Farah,Python,80,Ravi
