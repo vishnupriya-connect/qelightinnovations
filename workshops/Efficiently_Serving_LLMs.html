@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efficiently Serving LLMs - Syllabus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+      .navbar-dark-blue {
+        background-color: #003366;
+      }
+      /* Back to Top Button Style */
+      #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        font-size: 20px;
+        padding: 12px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #003366;
+        color: white;
+        transition: opacity 0.3s;
+      }
+      #backToTop:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-blue">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">QElight - Quality Education</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Syllabus Content -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Efficiently Serving LLMs - Syllabus</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Introduction</strong>
+          <ul>
+            <li>Overview of efficiently serving LLM applications</li>
+            <li>Course objectives and foundational concepts</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Text Generation</strong>
+          <ul>
+            <li>Understanding how LLMs generate text token by token</li>
+            <li>Code examples demonstrating text generation processes</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Batching</strong>
+          <ul>
+            <li>Implementing batching techniques to serve multiple users</li>
+            <li>Trade-offs between speed and user load handling</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Continuous Batching</strong>
+          <ul>
+            <li>Optimization through continuous batching</li>
+            <li>Code examples for efficient batch processing</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Quantization</strong>
+          <ul>
+            <li>Improving model performance through quantization</li>
+            <li>Examples of quantization and its impact on latency</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Low-Rank Adaptation (LoRA)</strong>
+          <ul>
+            <li>Introduction to LoRA for efficient model serving</li>
+            <li>Using LoRA to fine-tune multiple models simultaneously</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Multi-LoRA Inference</strong>
+          <ul>
+            <li>Serving multiple LoRA adapters to various users</li>
+            <li>Batching techniques for scalable multi-LoRA inference</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>LoRAX</strong>
+          <ul>
+            <li>Using Predibase's LoRAX framework for LLM inference</li>
+            <li>Real-world application of optimization techniques</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Conclusion</strong>
+          <ul>
+            <li>Recap of efficient serving techniques for LLMs</li>
+            <li>Best practices and future directions</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 QElight Workshops. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:vishnupriya.connect@gmail.com" class="text-white">vishnupriya.connect@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919606485837" class="text-white">+91 9606485837</a></p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTop" title="Go to top">
+      <i class="bi bi-arrow-up" style="font-size: 1.5rem"></i>
+    </button>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Script for Back to Top Button -->
+    <script>
+      // Show the button when scrolled down
+      window.onscroll = function () {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+
+      // Smooth scroll to top function
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

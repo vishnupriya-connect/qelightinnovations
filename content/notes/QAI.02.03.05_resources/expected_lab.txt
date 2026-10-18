@@ -1,0 +1,24 @@
+single: Series (3,) [72, 85, 91]
+one-column table: DataFrame (3, 1)
+attribute equals brackets: True
+ordered columns: ['sql', 'student', 'python']
+,sql,student,python
+s1,80,Anu,72
+s2,77,Bala,85
+s3,89,Chitra,91
+renamed: ['sql', 'learner', 'python_mark']
+original: ['student', 'python', 'sql', 'phone']
+replaced: ['sql_mark', 'learner', 'python_mark']
+variation:
+student,database_mark
+Anu,80
+Bala,77
+Chitra,89
+missing selection: KeyError
+strict rename: KeyError
+wrong header count: ValueError
+mean attribute callable: True
+mean column: [10, 20]
+space label: [30, 40]
+duplicate scalar selection: DataFrame (1, 2)
+empty column selection: (3, 0) ['s1', 's2', 's3']

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Graphs for RAG - Syllabus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+      .navbar-dark-blue {
+        background-color: #003366;
+      }
+      /* Back to Top Button Style */
+      #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        font-size: 20px;
+        padding: 12px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #003366;
+        color: white;
+        transition: opacity 0.3s;
+      }
+      #backToTop:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-blue">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">QElight - Quality Education</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Syllabus Content -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Knowledge Graphs for RAG - Syllabus</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Introduction</strong>
+          <ul>
+            <li>Overview of knowledge graphs and their applications in RAG</li>
+            <li>Course objectives and key concepts</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Knowledge Graph Fundamentals</strong>
+          <ul>
+            <li>Understanding nodes, edges, and relationships in knowledge graphs</li>
+            <li>Introduction to Cypher query language</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Querying Knowledge Graphs</strong>
+          <ul>
+            <li>Using Cypher to retrieve data from a knowledge graph</li>
+            <li>Examples with movie and actor data</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Preparing Text for RAG</strong>
+          <ul>
+            <li>Formatting text data for retrieval-augmented generation</li>
+            <li>Ensuring relevant context for LLMs</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Constructing a Knowledge Graph from Text Documents</strong>
+          <ul>
+            <li>Building a graph from scratch with structured documents</li>
+            <li>Demo use case with financial and investment data</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Adding Relationships to the SEC Knowledge Graph</strong>
+          <ul>
+            <li>Creating meaningful connections between entities</li>
+            <li>Advanced techniques for graph expansion</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Expanding the SEC Knowledge Graph</strong>
+          <ul>
+            <li>Adding more data sources to the knowledge graph</li>
+            <li>Handling complex relationships and queries</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Chatting with the Knowledge Graph</strong>
+          <ul>
+            <li>Building a question-answering system with Neo4j and LangChain</li>
+            <li>Interacting with a structured text document knowledge graph</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Conclusion</strong>
+          <ul>
+            <li>Recap of knowledge graph techniques for RAG applications</li>
+            <li>Best practices and future directions</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 QElight Workshops. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:vishnupriya.connect@gmail.com" class="text-white">vishnupriya.connect@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919606485837" class="text-white">+91 9606485837</a></p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTop" title="Go to top">
+      <i class="bi bi-arrow-up" style="font-size: 1.5rem"></i>
+    </button>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Script for Back to Top Button -->
+    <script>
+      // Show the button when scrolled down
+      window.onscroll = function () {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+
+      // Smooth scroll to top function
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

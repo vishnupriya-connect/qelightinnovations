@@ -1,0 +1,28 @@
+single: Series 10 (3,)
+row values: ['Bala', 85, 77]
+one-row table: DataFrame (1, 3)
+list order: [20, 40, 20]
+range 1:4: [10, 70, 20]
+step ::2: [40, 70, 60]
+last row: 60 Eshan
+last two: [20, 60]
+reverse: [60, 20, 70, 10, 40]
+row and column block:
+,sql,learner
+10,77,Bala
+70,89,Chitra
+20,75,Deepa
+scalar cell: 91
+one column: Series (5,)
+one column table: DataFrame (5, 1)
+clipped slice: [20, 60]
+empty slice: (0, 3)
+outside scalar: IndexError
+outside list: IndexError
+too negative: IndexError
+zero step: ValueError
+variation:
+learner,sql
+Anu,80
+Chitra,89
+Eshan,90
