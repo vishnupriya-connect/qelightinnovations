@@ -1,3 +1,0 @@
-,learner,python,sql
-L70,Chitra,91,89
-L10,Bala,85,77
